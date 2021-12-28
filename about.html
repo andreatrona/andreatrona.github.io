@@ -28,6 +28,14 @@
         background-color: transparent;
         text-decoration: underline;
       }
+      img.minPic {
+        width: 100%;
+        height: 100%;
+      }
+      .half{
+        width:50%;
+        display: table-cell;
+      }
       .vl {
         border-left: 1px solid black;
         margin-top: 0px;
@@ -76,9 +84,26 @@
       <hr style="width:100%; text-align:left; margin-left:0; margin-top:10px; margin-bottom:10px"></hr>
     <font size="+3">
 
-    <p style = "margin-bottom: 3px; margin-top:3px"> Andrea Trona is a sound engineer, electronic musician and programmer based in Bologna (IT).
+      <table id="about" title="andreatrona/about" style="font-size:100%">
+        <tbody>
+
+          <tr>
+            <td style="vertical-align: text-top">
+              <div class="half" style="vertical-align: text-top"> Andrea Trona is a sound engineer, electronic musician and programmer based in Bologna (IT).
+              He work in music producing, sound installation and projects between informatics, electronics and sound.</div>
+            </td>
+            <td style="vertical-align: text-top">
+              <img style="margin-right:10px" src="Untitled 3.png" class="minPic">
+            </td>
+          </tr>
+        </tbody>
+      </table>
+<!--
+    <div class="half" style="vertical-align: text-top">  Andrea Trona is a sound engineer, electronic musician and programmer based in Bologna (IT).
     He work in music producing, sound installation and projects between informatics, electronics and sound.
-    </p>
+  </div>
+  <div class="half" style="vertical-align: text-top">  <img src="Untitled 3.png" class="minPic"> </div>
+-->
     </font>
 
       <div class="tvl"></div>
