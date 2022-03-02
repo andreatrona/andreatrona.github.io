@@ -26,7 +26,11 @@ li {
   margin-left: 20px;
 }
 
-.halfPlus{
-  width:60%;
-  padding:0px;
+
+
+@media only screen and (max-width: 600px) {
+  .half{
+    width:90%;
+    padding:0px;
+  }
 }
