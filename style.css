@@ -48,8 +48,8 @@ a:active {
    min-height: 84vh; // da scegliere accuratamente la dimensione (conta la dimensione del finto header)
  }
 
- .lumina {
-   position: absolute;
+ .luminaButton {
+   
    top: 50%;
    width: 100%;
    text-align: center;
