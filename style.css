@@ -49,12 +49,58 @@ a:active {
  }
 
  .luminaButton {
-   
+   border: none;
    top: 50%;
    width: 100%;
    text-align: center;
+   -webkit-transition-duration: 0.4s; /* Safari */
+   transition-duration: 0.4s;
    min-height: 84vh;
+   color: black;
+   animation-fill-mode: forwards;
  }
+
+ .luminaButton:checked {
+   /*color: white;*/
+   content: "";
+   opacity: 0;
+   transition: 5s
+ }
+
+
+
+
+
+.button {
+  position: relative;
+  background-color: #04AA6D;
+  border: none;
+  font-size: 28px;
+  color: #FFFFFF;
+  padding: 20px;
+  width: 200px;
+  text-align: center;
+  -webkit-transition-duration: 0.4s; /* Safari */
+  transition-duration: 0.4s;
+  text-decoration: none;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.button:after {
+  content: "";
+  background: #90EE90;
+  opacity: 0;
+  transition: all 0.8s
+}
+
+.button:active:after {
+  padding: 0;
+  margin: 0;
+  opacity: 1;
+  transition: 0s
+}
+
 
 
 hr {
@@ -75,6 +121,22 @@ hr {
 
 li {
   margin-left: 20px;
+}
+
+
+@keyframes textFade {
+  0% {
+    color: black;
+  }
+  100% {
+    color: white;
+  }
+}
+
+
+#myButton.animating {
+  animation: textFade 15s;
+  animation-fill-mode: both;
 }
 
 
