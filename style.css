@@ -1,7 +1,7 @@
 body{
   background-color: black;
   animation-name: example;
-  animation-duration: 0.1s;
+  animation-duration: 0.35s;
   animation-iteration-count: 4;
   animation-direction: alternate;
 }
@@ -146,10 +146,12 @@ li {
 
 @keyframes textFade {
   0% {
-    color: white;
+    /*color: white;*/
+    opacity: 1;
   }
   100% {
-    color: black;
+    /*color: black;*/
+    opacity: 0;
   }
 }
 
