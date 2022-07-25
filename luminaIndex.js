@@ -10,7 +10,7 @@ btn.addEventListener('click', function onClick() {
 
 */
 
-function clientedetail() {
+function textFade() {
   var el = document.getElementById("myButton");
   el.classList.add("animating");
 
