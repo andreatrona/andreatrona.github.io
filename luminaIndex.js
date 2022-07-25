@@ -10,7 +10,7 @@ btn.addEventListener('click', function onClick() {
 
 */
 
-function textFade() {
+function textFadeOut() {
   var el = document.getElementById("myButton");
   el.classList.add("animating");
 
