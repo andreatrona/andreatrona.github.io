@@ -10,6 +10,9 @@ p{
   font-size: 40px;
   color:white;
 }
+.testo{
+  text-align: justify;
+}
 .nota{
   font-size: 25px;
 }
@@ -22,7 +25,7 @@ p{
  .luminaButton {
    border: none;
    width: 100%;
-   text-align: left;
+   text-align: center;
    -webkit-transition-duration: 0.4s; /* Safari */
    transition-duration: 0.4s;
    min-height: 5vh;
