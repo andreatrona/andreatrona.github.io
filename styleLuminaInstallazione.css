@@ -6,50 +6,10 @@ body{
   animation-direction: alternate;
 }
 
-a:link {
-  color: grey!important;
-  background-color: transparent;
-  text-decoration: none;
+p{
+  font-size: 40px;
+  color:white;
 }
-a:visited {
-  color: grey!important;
-  background-color: transparent;
-  text-decoration: underline;
-}
-a:hover {
-  color: blue!important;
-  background-color: transparent;
-  text-decoration: underline;
-}
-a:active {
-  color: grey!important;
-  background-color: transparent;
-  text-decoration: underline;
-}
-.half{
-  width:60%;
-  padding:0px;
-}
-.vl {
-  border-left: 1px solid black;
-  margin-top: 0px;
-  margin-left: 600px;
-  height: 20px;
-}
-.tvl {
-  border-left: 1px;
-  margin-top: 0px;
-  margin-left: 0px;
-  height: 100px;
-}
-.footer {
-   position: text-bottom;
-   left: 10px;
-   bottom: 0;
-   width: 100%;
-   color: grey;
-
- }
  .myBody {
    padding: 0px;
    padding-bottom: 0px;
@@ -58,13 +18,11 @@ a:active {
 
  .luminaButton {
    border: none;
-   /*top: 50%;*/
    width: 100%;
-   text-align: center;
+   text-align: left;
    -webkit-transition-duration: 0.4s; /* Safari */
    transition-duration: 0.4s;
-   min-height: 84vh;
-   font-size: 50vh
+   min-height: 5vh;
    color: white;
    animation-fill-mode: forwards;
  }
@@ -73,7 +31,7 @@ a:active {
    /*color: white;*/
    content: "";
    opacity: 0;
-   transition: 5s
+   transition: 5s;
  }
 
  div {
