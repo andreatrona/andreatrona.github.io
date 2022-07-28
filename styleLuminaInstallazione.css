@@ -25,7 +25,6 @@ p{
    padding-bottom: 0px;
    min-height: 84vh; // da scegliere accuratamente la dimensione (conta la dimensione del finto header)
  }
-
  .luminaButton {
    border: none;
    width: 100%;
@@ -36,6 +35,14 @@ p{
    color: white;
    animation-fill-mode: forwards;
  }
+
+ .circle {
+   height: 25px;
+   width: 25px;
+   background-color: white;
+   border-radius: 50%;
+   display: inline-block;
+}
 
  .luminaButton:checked {
    /*color: white;*/
