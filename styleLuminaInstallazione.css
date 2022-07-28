@@ -1,0 +1,181 @@
+body{
+  background-color: black;
+  animation-name: example;
+  animation-duration: 0.35s;
+  animation-iteration-count: 4;
+  animation-direction: alternate;
+}
+
+a:link {
+  color: grey!important;
+  background-color: transparent;
+  text-decoration: none;
+}
+a:visited {
+  color: grey!important;
+  background-color: transparent;
+  text-decoration: underline;
+}
+a:hover {
+  color: blue!important;
+  background-color: transparent;
+  text-decoration: underline;
+}
+a:active {
+  color: grey!important;
+  background-color: transparent;
+  text-decoration: underline;
+}
+.half{
+  width:60%;
+  padding:0px;
+}
+.vl {
+  border-left: 1px solid black;
+  margin-top: 0px;
+  margin-left: 600px;
+  height: 20px;
+}
+.tvl {
+  border-left: 1px;
+  margin-top: 0px;
+  margin-left: 0px;
+  height: 100px;
+}
+.footer {
+   position: text-bottom;
+   left: 10px;
+   bottom: 0;
+   width: 100%;
+   color: grey;
+
+ }
+ .myBody {
+   padding: 0px;
+   padding-bottom: 0px;
+   min-height: 84vh; // da scegliere accuratamente la dimensione (conta la dimensione del finto header)
+ }
+
+ .luminaButton {
+   border: none;
+   /*top: 50%;*/
+   width: 100%;
+   text-align: center;
+   -webkit-transition-duration: 0.4s; /* Safari */
+   transition-duration: 0.4s;
+   min-height: 84vh;
+   font-size: 50vh
+   color: white;
+   animation-fill-mode: forwards;
+ }
+
+ .luminaButton:checked {
+   /*color: white;*/
+   content: "";
+   opacity: 0;
+   transition: 5s
+ }
+
+ div {
+   width: 100px;
+   height: 100px;
+   background-color: black;
+
+   animation-duration: 0.2s;
+ }
+
+ @keyframes example {
+  from {background-color: black;}
+  to {background-color: white;}
+}
+
+.button {
+  position: relative;
+  background-color: #04AA6D;
+  border: none;
+  font-size: 28px;
+  color: #FFFFFF;
+  padding: 20px;
+  width: 200px;
+  text-align: center;
+  -webkit-transition-duration: 0.4s; /* Safari */
+  transition-duration: 0.4s;
+  text-decoration: none;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.button:after {
+  content: "";
+  background: #90EE90;
+  opacity: 0;
+  transition: all 0.8s
+}
+
+.button:active:after {
+  padding: 0;
+  margin: 0;
+  opacity: 1;
+  transition: 0s
+}
+
+
+
+hr {
+  display: block;
+  margin-before: 0.5em;
+  margin-after: 0.5em;
+  margin-start: auto;
+  margin-end: auto;
+  overflow: hidden;
+  border-style: inset;
+  border-width: 1px;
+  opacity: 0.5;
+  width: 60%;
+  margin-left: 2px;
+  margin-right: auto;
+}
+
+
+li {
+  margin-left: 20px;
+}
+
+
+@keyframes textFade {
+  0% {
+    /*color: white;*/
+    opacity: 1;
+  }
+  100% {
+    /*color: black;*/
+    opacity: 0;
+  }
+}
+
+
+#myButton.animating {
+  animation: textFade 15s;
+  animation-fill-mode: both;
+}
+
+
+
+@media only screen and (max-width: 1500px) {
+  .half{
+    width:90%;
+    padding:0px;
+  }
+}
+
+@media only screen and (max-width: 700px) {
+  .half{
+    width:100%;
+    padding:0px;
+  }
+  .workPic{
+    width:300px!important;
+    height:300px!important;
+
+  }
+}
