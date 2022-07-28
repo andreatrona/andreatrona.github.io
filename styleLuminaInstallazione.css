@@ -12,7 +12,14 @@ p{
   margin-left: 1vh;
   margin-right: 1vh;
 }
+.imgCenter{
 
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+
+}
 .testo{
   margin-top: 3vh;
   text-align: justify;
