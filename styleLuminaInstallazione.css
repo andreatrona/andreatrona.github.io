@@ -109,7 +109,7 @@ img {
 #sfondo.animWhite{
   animation: toWhite;
   animation-fill-mode: both;
-  animation-duration: 2s;
+  animation-duration: 20s;
   animation-iteration-count: 1;
   animation-direction: alternate;
 }
