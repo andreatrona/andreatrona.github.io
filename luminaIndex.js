@@ -1,24 +1,7 @@
-/*const btn = document.getElementById('btn');
+function homePageFadeOut() {
+  var el = document.getElementById("homePage");
+  el.classList.add("animatingOut");
+  el = document.getElementById("homePage2");
+  el.classList.add("animatingIn");
 
-btn.addEventListener('click', function onClick() {
-
-
-  btn.style.color = 'white';
-
-});
-
-
-*/
-
-function textFadeOut() {
-  var el = document.getElementById("myButton");
-  el.classList.add("animating");
-
-  //This function runs when the CSS animation is completed
-/*  var listener = el.addEventListener('animationend', function() {
-    el.classList.remove("animating");
-
-    //this removes the listener after it runs so that it doesn't get re-added every time the button is clicked
-    el.removeEventListener('animationend', listener);
-  });*/
 }
