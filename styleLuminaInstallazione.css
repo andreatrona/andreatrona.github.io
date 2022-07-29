@@ -11,10 +11,11 @@
 }
 
 #gifPlay{
-  scale: 300%;
-  opacity: 0;
+
+  opacity: 1;
   top: 500px;
   left: 500px;
+  size: 100% 100vh;
 }
 
 
@@ -32,6 +33,13 @@ img {
     left: 0;
     right: 0;
     bottom: 0;
+}
+
+.fullscreen {
+  text-align: center;
+  height: 100vh;
+  width: 100%;
+  opacity:1;
 }
 
 .imgCenter{
@@ -180,6 +188,7 @@ img {
     background: url(gif/light1.gif);
     background-repeat: no-repeat;
     background-size: 100% 100vh;
+    opacity: 0;
   }
 }
 
