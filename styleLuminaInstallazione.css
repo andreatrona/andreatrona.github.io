@@ -91,13 +91,29 @@ img {
   animation-duration: 2s;
 }
 
-#homePage2.animatingIn {
+#homePage2Testo.animatingIn {
   animation: home2In;
   animation-fill-mode: both;
   animation-duration: 20s;
   animation-iteration-count: 2;
   animation-direction: alternate;
 }
+
+#homePage2Nota.animatingIn {
+  animation: home2In;
+  animation-fill-mode: both;
+  animation-duration: 20s;
+  animation-iteration-count: 2;
+  animation-direction: alternate;
+}
+/*
+#homePage2Testo.animatingIn {
+  animation: home2In;
+  animation-fill-mode: both;
+  animation-duration: 20s;
+  animation-iteration-count: 2;
+  animation-direction: alternate;
+}*/
 
 @keyframes homeOut {
   0% {
