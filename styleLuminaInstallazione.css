@@ -6,7 +6,7 @@
   animation-direction: alternate;
 }*/
 
-body{
+#sfondo{
   background-color: #15161b;
 }
 
@@ -76,7 +76,6 @@ img {
    width: 100px;
    height: 100px;
    background-color: black;
-
    animation-duration: 0.2s;
  }
 
@@ -104,6 +103,14 @@ img {
   animation-fill-mode: both;
   animation-duration: 20s;
   animation-iteration-count: 2;
+  animation-direction: alternate;
+}
+
+#sfondo.animWhite{
+  animation: toWhite;
+  animation-fill-mode: both;
+  animation-duration: 2s;
+  animation-iteration-count: 1;
   animation-direction: alternate;
 }
 /*
@@ -134,6 +141,16 @@ img {
   100% {
     opacity: 1;
   }
+}
+
+@keyframes toWhite {
+  0% {
+    background-color: #15161b;
+  }
+  100% {
+    background-color: #ffffff;
+  }
+
 }
 
 @media only screen and (max-width: 1500px) {

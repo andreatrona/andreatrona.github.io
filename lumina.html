@@ -11,7 +11,7 @@
 </head>
 
 
-  <body style="font-family:arial;">
+  <body style="font-family:arial;" id="sfondo">
 <audio loop id="suono" src="audio/prova2.mp3" type="audio/mp3"></audio>
 
 <script src="luminaIndex.js"></script>
@@ -32,15 +32,8 @@
 </p>
 
 <!-- bottone per far partire l'interfaccia grafica con dissolvenze e attese -->
-<img class="luminaButton" id="homePage" src="gif/pulse2.gif" onclick="homePageFadeOut(), window.setTimeout(playAudioFile, 10000)"> </img>
+<img class="luminaButton" id="homePage" src="gif/pulse2.gif" onclick="homePageFadeOut(), window.setTimeout(playAudioFile, 10000), window.setTimeout(backgroundToWhite, 18000)"> </img>
 
-
-<!--
-<button class="luminaButton" id="myButton" style=" border: none; background: none; font-size: 5vh; color: white"
-onclick="document.getElementById('suono').play(), textFadeOut()" >
-clicca qui
-</button>
--->
 
 
   </body>

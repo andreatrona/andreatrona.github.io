@@ -5,9 +5,13 @@ function homePageFadeOut() {
   el.classList.add("animatingIn");
   var nl = document.getElementById("homePage2Nota");
   nl.classList.add("animatingIn");
-
 }
 
 function playAudioFile() {
   document.getElementById('suono').play();
+}
+
+function backgroundToWhite() {
+  var el = document.getElementById('sfondo');
+  el.classList.add("animWhite");
 }
