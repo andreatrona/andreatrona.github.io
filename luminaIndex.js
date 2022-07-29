@@ -6,5 +6,8 @@ function homePageFadeOut() {
   var nl = document.getElementById("homePage2Nota");
   nl.classList.add("animatingIn");
 
+}
 
+function playAudioFile() {
+  document.getElementById('suono').play();
 }
