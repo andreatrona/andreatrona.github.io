@@ -10,6 +10,14 @@
   background-color: #15161b;
 }
 
+#gifPlay{
+  scale: 300%;
+  opacity: 0;
+  top: 500px;
+  left: 500px;
+}
+
+
 p{
   font-size: 40px;
   color:white;
@@ -113,6 +121,24 @@ img {
   animation-iteration-count: 1;
   animation-direction: alternate;
 }
+
+#sfondo.animFlashBlack{
+  animation: flashToBlack;
+  animation-fill-mode: both;
+  animation-duration: 0.05s;
+  animation-iteration-count: 5;
+}
+
+#sfondo.black{
+  background-color: black;
+}
+
+#gifPlay.gifViewer{
+  animation: gifIn;
+  animation-fill-mode: both;
+  animation-duration: 5s;
+  animation-iteration-count: 1;
+}
 /*
 #homePage2Testo.animatingIn {
   animation: home2In;
@@ -147,10 +173,36 @@ img {
   0% {
     background-color: #15161b;
   }
-  100% {
+  50% {
     background-color: #ffffff;
   }
+  100%{
+    background: url(gif/light1.gif);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+  }
+}
 
+@keyframes flashToBlack {
+  0% {
+    background-color: white;
+  }
+  100% {
+    background-color: black;
+  }
+}
+
+@keyframes gifIn {
+  0% {
+    opacity: 0;
+    top: 0px;
+    left: 0px;
+  }
+  100% {
+    opacity: 1;
+    top: 0px;
+    left: 0px;
+  }
 }
 
 @media only screen and (max-width: 1500px) {
