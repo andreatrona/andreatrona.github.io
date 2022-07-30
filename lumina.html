@@ -20,9 +20,9 @@
 
 <!-- light GIF -->
 <div class="myLight" id="gifPlay">
- <img src="gif/light1.gif">
+ <img src="gif/light1.gif" id="gifImg">
  <!-- flash -->
- <div class="myLight2" id="flashBN">
+ <!--<div class="myLight2" id="flashBN">-->
  </div>
 </div>
 
@@ -48,9 +48,9 @@
         flash
 -->
 <img class="luminaButton" id="homePage" src="gif/pulse2.gif"
-onclick="homePageFadeOut(), window.setInterval(flash, 1000),
+onclick="homePageFadeOut(), viewGIFLfo(),
 window.setTimeout(backgroundToWhite, 20000),
-window.setTimeout(playAudioFile, 40000), window.setTimeout(viewGIF, 41000),
+window.setTimeout(playAudioFile, 40000), window.setTimeout(viewGIF, 44000), window.setInterval(viewGIFFlash, 60000),
 window.setTimeout(flashFlag, 50000)">
 </img>
 

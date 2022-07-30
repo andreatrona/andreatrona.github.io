@@ -87,7 +87,6 @@ img {
    padding-left: -0px;
    padding-top: 0px;
    opacity:0;
-
  }
 
  .myLight img{
@@ -154,22 +153,23 @@ img {
 #gifPlay.gifViewer{
   animation: gifIn;
   animation-fill-mode: both;
-  animation-duration: 30s;
+  animation-duration:50s;
   animation-iteration-count: 1;
 }
 
-#flashBN.gifFlasherON{
-  animation: gifIn;
+#gifImg.gifLfo{
+  animation: gifInOut;
   animation-fill-mode: both;
-  animation-duration: 0.1s;
-  animation-iteration-count: 1;
+  animation-duration: 20s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
 }
 
-#flashBN.gifFlasher{
+#gifImg.gifFlasher{
   animation: BN;
   animation-fill-mode: both;
   animation-duration: 0.1s;
-  animation-iteration-count: 4;
+  animation-iteration-count: 8;
 }
 /*
 #homePage2Testo.animatingIn {
@@ -223,19 +223,40 @@ img {
   0% {
     opacity: 0;
   }
+  50%{
+    opacity: 0.2;
+  }
   100% {
     opacity: 1;
+  }
+}
+/*
+@keyframes gifInOut {
+  0% {
+    filter: blur(200px);
+  }
+  100% {
+    filter: blur(0px);
+  }
+}
+*/
+
+
+@keyframes gifInOut {
+  0% {
+    filter: hue-rotate(90deg);
+  }
+  100% {
+    filter: hue-rotate(0deg);
   }
 }
 
 @keyframes BN {
   0% {
-    background-color: white;
-    height: 100vh;
+    filter: contrast(20%);
   }
   100% {
-    background-color: black;
-    height: 0vh;
+    filter: contrast(100%);
   }
 }
 

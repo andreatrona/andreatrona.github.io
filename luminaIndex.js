@@ -33,6 +33,16 @@ function viewGIF(){
   el.classList.add("gifViewer");
 }
 
+function viewGIFLfo(){
+  var el = document.getElementById('gifPlay');
+  el.classList.add("gifLfo");
+}
+
+function viewGIFFlash(){
+  var el = document.getElementById('gifPlay');
+  el.classList.add("gifFlasher");
+}
+
 function flashFlag(){
   var el = document.getElementById('flashBN');
   el.classList.add("gifFlasherON");
