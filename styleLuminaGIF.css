@@ -2,13 +2,13 @@ html, body {
   margin:0px;
 }
 
-.mySlides {
+.myLight {
   background: transparent 50% 50% no-repeat /contain;
   padding-left: 0px;
   padding-top: 0px;
 }
 
-.mySlides img{
+.myLight img{
  width: 100vw;
  height: 100vh;
 }

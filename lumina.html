@@ -16,6 +16,18 @@
 
 <script src="luminaIndex.js"></script>
 
+
+
+<!-- light GIF -->
+<div class="myLight" id="gifPlay">
+ <img src="gif/light1.gif">
+ <!-- flash -->
+ <div class="myLight2" id="flashBN">
+ </div>
+</div>
+
+
+
 <p class="testoHome2" id="homePage2Testo">
   Agnese Banti, Andrea Trona <br>
   <b>LUMINA</b> (2022)<br>
@@ -32,20 +44,16 @@
 </p>
 
 <!-- bottone per far partire l'interfaccia grafica con dissolvenze e attese -->
+<!-- todo
+        flash
+-->
 <img class="luminaButton" id="homePage" src="gif/pulse2.gif"
-onclick="homePageFadeOut(), window.setTimeout(playAudioFile, 10000),
-window.setTimeout(backgroundToWhite, 20000), window.setTimeout(viewGIF, 40000),
-window.setInterval(backgroundToBlack, 50000), window.setInterval(backgroundToBlackRST, 50100)">
+onclick="homePageFadeOut(), window.setInterval(flash, 1000),
+window.setTimeout(backgroundToWhite, 20000),
+window.setTimeout(playAudioFile, 40000), window.setTimeout(viewGIF, 40000),
+window.setTimeout(flashFlag, 50000)">
 </img>
-<!--
-<img id="gifPlay" src="gif/light1.gif">
 
-</img>
--->
-
-<!--
-<img class="luminaButton" id="homePage" src="gif/light1.gif"> </img>
--->
 
   </body>
 </html>

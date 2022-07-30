@@ -1,23 +1,10 @@
-/*body{
-  background-color: #15161b;
-  animation-name: example;
-  animation-duration: 0.35s;
-  animation-iteration-count: 2;
-  animation-direction: alternate;
-}*/
+html, body {
+  margin:0px;
+}
 
 #sfondo{
   background-color: #15161b;
 }
-
-#gifPlay{
-
-  opacity: 1;
-  top: 500px;
-  left: 500px;
-  size: 100% 100vh;
-}
-
 
 p{
   font-size: 40px;
@@ -52,7 +39,7 @@ img {
 
 
 .testoHome2{
-  margin-top: 3vh;
+  margin-top: 0px;
   text-align: justify;
   opacity: 0;
 }
@@ -93,6 +80,29 @@ img {
    height: 100px;
    background-color: black;
    animation-duration: 0.2s;
+ }
+
+ .myLight {
+   background: transparent 50% 50% no-repeat /contain;
+   padding-left: -0px;
+   padding-top: 0px;
+   opacity:0;
+
+ }
+
+ .myLight img{
+  width: 100vw;
+  height: 100vh;
+ }
+
+ .myLight2 {
+   background: transparent 50% 50% no-repeat /contain;
+   padding-left: -0px;
+   padding-top: 0px;
+   opacity:0;
+   width: 100vw;
+   height: 0vh;
+   position: absolute;
  }
 
  @keyframes example {
@@ -144,8 +154,22 @@ img {
 #gifPlay.gifViewer{
   animation: gifIn;
   animation-fill-mode: both;
-  animation-duration: 5s;
+  animation-duration: 30s;
   animation-iteration-count: 1;
+}
+
+#flashBN.gifFlasherON{
+  animation: gifIn;
+  animation-fill-mode: both;
+  animation-duration: 0.1s;
+  animation-iteration-count: 1;
+}
+
+#flashBN.gifFlasher{
+  animation: BN;
+  animation-fill-mode: both;
+  animation-duration: 0.1s;
+  animation-iteration-count: 4;
 }
 /*
 #homePage2Testo.animatingIn {
@@ -181,14 +205,8 @@ img {
   0% {
     background-color: #15161b;
   }
-  50% {
+  100% {
     background-color: #ffffff;
-  }
-  100%{
-    background: url(gif/light1.gif);
-    background-repeat: no-repeat;
-    background-size: 100% 100vh;
-    opacity: 0;
   }
 }
 
@@ -204,13 +222,20 @@ img {
 @keyframes gifIn {
   0% {
     opacity: 0;
-    top: 0px;
-    left: 0px;
   }
   100% {
     opacity: 1;
-    top: 0px;
-    left: 0px;
+  }
+}
+
+@keyframes BN {
+  0% {
+    background-color: white;
+    height: 100vh;
+  }
+  100% {
+    background-color: black;
+    height: 0vh;
   }
 }
 
