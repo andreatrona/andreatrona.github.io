@@ -11,4 +11,53 @@ html, body {
 .myLight img{
  width: 100vw;
  height: 100vh;
+ opacity: 1;
+ filter: blur(0px);
+}
+
+
+
+#myLightDiv.gifFlasher{
+  animation: myFlash;
+  animation-fill-mode: both;
+  animation-duration: 0.05s;
+  animation-iteration-count: 5;
+  animation-direction: alternate;
+}
+
+#myLightDiv.gifFlasher2{
+  animation: colorChange;
+  animation-fill-mode: both;
+  animation-duration: 3s;
+  animation-iteration-count: 2;
+  animation-direction: alternate;
+}
+
+@keyframes colorChange {
+  0% {
+    filter: hue-rotate(0deg);
+  }
+  100% {
+    filter: hue-rotate(-40deg);
+  }
+}
+
+@keyframes myFlash {
+  0% {
+    filter: brightness(3);
+  }
+  100% {
+    filter: brightness(1);
+  }
+}
+
+@keyframes myFlash2 {
+  0% {
+    filter: invert(0.9);
+
+  }
+  100% {
+    filter: invert(0);
+
+  }
 }

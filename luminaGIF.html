@@ -14,16 +14,13 @@
   <body style="font-family:arial;" id="sfondo">
 <audio loop id="suono" src="audio/prova2.mp3" type="audio/mp3"></audio>
 
-<script src="luminaIndex.js"></script>
+<script src="gifIndex.js"></script>
 
 
 <!-- bottone per far partire l'interfaccia grafica con dissolvenze e attese -->
 
-
-
-
-    <div class="myLight">
-     <img src="gif/light1.gif">
+    <div class="myLight" id="myLightDiv">
+     <img id="myLightImg" src="gif/light1.gif" onClick=" window.setInterval(removeFlash2, 7999), window.setInterval(flash2, 8000), window.setInterval(removeFlash, 6999), window.setInterval(flash, 7000) ">
     </div>
 
 

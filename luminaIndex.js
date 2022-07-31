@@ -49,6 +49,6 @@ function flashFlag(){
 }
 
 function flash(){
-  var el = document.getElementById('flashBN');
+  var el = document.div.img;
   el.classList.add("gifFlasher");
 }

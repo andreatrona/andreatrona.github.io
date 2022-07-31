@@ -12,7 +12,7 @@ p{
   margin-left: 1vh;
   margin-right: 1vh;
 }
-
+/*
 img {
     position: absolute;
     margin: auto;
@@ -20,7 +20,7 @@ img {
     left: 0;
     right: 0;
     bottom: 0;
-}
+}*/
 
 .fullscreen {
   text-align: center;
@@ -58,6 +58,13 @@ img {
    -webkit-transition-duration: 0.4s; /* Safari */
    transition-duration: 0.4s;
    animation-fill-mode: forwards;
+
+   position: absolute;
+   margin: auto;
+   top: 0;
+   left: 0;
+   right: 0;
+   bottom: 0;
  }
 
  .circle {
@@ -153,19 +160,19 @@ img {
 #gifPlay.gifViewer{
   animation: gifIn;
   animation-fill-mode: both;
-  animation-duration:50s;
+  animation-duration:2s;
   animation-iteration-count: 1;
 }
 
 #gifImg.gifLfo{
   animation: gifInOut;
   animation-fill-mode: both;
-  animation-duration: 20s;
+  animation-duration: 3s;
   animation-iteration-count: infinite;
   animation-direction: alternate;
 }
 
-#gifImg.gifFlasher{
+.mylight img{
   animation: BN;
   animation-fill-mode: both;
   animation-duration: 0.1s;
@@ -230,16 +237,16 @@ img {
     opacity: 1;
   }
 }
-/*
+
 @keyframes gifInOut {
   0% {
-    filter: blur(200px);
+    opacity: 0;
   }
   100% {
-    filter: blur(0px);
+    opacity: 1;
   }
 }
-*/
+
 
 
 @keyframes gifInOut {
