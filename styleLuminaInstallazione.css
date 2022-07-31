@@ -161,7 +161,7 @@ img {
 #gifPlay.gifViewer{
   animation: gifIn;
   animation-fill-mode: both;
-  animation-duration:10s;
+  animation-duration:8s;
   animation-iteration-count: 1;
 }
 
