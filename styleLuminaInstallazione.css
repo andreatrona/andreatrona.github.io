@@ -93,12 +93,13 @@ img {
    background: transparent 50% 50% no-repeat /contain;
    padding-left: -0px;
    padding-top: 0px;
+   /*height: 100vh;*/
    opacity:0;
  }
 
  .myLight img{
   width: 100vw;
-  height: 100vh;
+  height: 300vh;
  }
 
  .myLight2 {
@@ -160,7 +161,7 @@ img {
 #gifPlay.gifViewer{
   animation: gifIn;
   animation-fill-mode: both;
-  animation-duration:2s;
+  animation-duration:10s;
   animation-iteration-count: 1;
 }
 
