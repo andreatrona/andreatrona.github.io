@@ -10,6 +10,7 @@ function homePageFadeOut() {
 function playAudioFile() {
   document.getElementById('suonoMp3').play();
   document.getElementById('suonoOgg').play();
+  document.getElementById('suonoWav').play();
 /*
   var au = document.getElementById('suonoMp3');
   au.classList.add("soundFadeIn");*/
