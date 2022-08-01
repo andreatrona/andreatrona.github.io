@@ -8,9 +8,7 @@ function homePageFadeOut() {
 }
 
 function playAudioFile() {
-  /*
-  document.getElementById('suonoMp3').play();
-  document.getElementById('suonoOgg').play();*/
+  document.getElementById('suono').muted = false;
   document.getElementById('suono').play();
 /*
   var au = document.getElementById('suonoMp3');
