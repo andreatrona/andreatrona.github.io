@@ -7,12 +7,12 @@ function homePageFadeOut() {
   nl.classList.add("animatingIn");
 }
 
-function playAudioFile() {
+const standalone = window.navigator.standalone;
+const userAgent = window.navigator.userAgent.toLowerCase();
+const safari = /safari/.test(userAgent);
+const ios = /iphone|ipod|ipad/.test(userAgent);
 
-  const standalone = window.navigator.standalone;
-  const userAgent = window.navigator.userAgent.toLowerCase();
-  const safari = /safari/.test(userAgent);
-  const ios = /iphone|ipod|ipad/.test(userAgent);
+function playAudioFile() {
 
   if (ios) {
     if (!standalone && safari) {
@@ -30,11 +30,6 @@ function playAudioFile() {
 }
 
 function playAudioFileIOS() {
-
-  const standalone = window.navigator.standalone;
-  const userAgent = window.navigator.userAgent.toLowerCase();
-  const safari = /safari/.test(userAgent);
-  const ios = /iphone|ipod|ipad/.test(userAgent);
 
   if (ios) {
     if (!standalone && safari) {
