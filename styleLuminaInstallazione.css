@@ -120,6 +120,16 @@ p{
   animation-duration: 2s;
 }
 
+#homePageTxt{
+  margin-top: 64vh;
+  filter: brightness(0.2);
+}
+#homePageTxt.animatingOut {
+  animation: homeOut;
+  animation-fill-mode: both;
+  animation-duration: 1s;
+}
+
 #homePage2Testo.animatingIn {
   animation: home2In;
   animation-fill-mode: both;

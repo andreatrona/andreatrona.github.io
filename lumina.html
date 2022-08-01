@@ -33,8 +33,7 @@ stop/play?
 <!-- light GIF -->
 <div class="myLight" id="gifPlay">
  <img src="gif/light1.gif" id="gifImg">
- <!-- flash -->
- <!--<div class="myLight2" id="flashBN">-->
+
  </div>
 </div>
 
@@ -55,16 +54,17 @@ stop/play?
   </p>
 </p>
 
-<!-- bottone per far partire l'interfaccia grafica con dissolvenze e attese -->
-<!-- todo
-        flash
--->
+
+
+
 <img class="luminaButton" id="homePage" src="gif/pulse2.gif"
 onclick="homePageFadeOut(), viewGIFLfo(), playAudioFileIOS(), playAudioFile(),
 window.setTimeout(backgroundToWhite, 20000),
 window.setTimeout(viewGIF, 44000), window.setInterval(viewGIFFlash, 60000),
 window.setTimeout(flashFlag, 50000)">
 </img>
+
+<p class="luminaButton" id="homePageTxt"> tocca qui </p>
 
 <audio loop id="suono" autoPlay muted>
   <source src="audio/LUMINAdigital.mp3" type="audio/mpeg">
