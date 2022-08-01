@@ -8,10 +8,10 @@ function homePageFadeOut() {
 }
 
 function playAudioFile() {
-  document.getElementById('beep').play();
+/*  document.getElementById('suono').play();*/
   document.getElementById('suono').muted = false;
   document.getElementById('suono').play();
-  
+
 /*
   var au = document.getElementById('suonoMp3');
   au.classList.add("soundFadeIn");*/
