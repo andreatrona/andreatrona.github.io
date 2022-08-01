@@ -12,15 +12,7 @@ p{
   margin-left: 1vh;
   margin-right: 1vh;
 }
-/*
-img {
-    position: absolute;
-    margin: auto;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-}*/
+
 
 .fullscreen {
   text-align: center;
@@ -36,7 +28,6 @@ img {
   margin-right: auto;
   width: 50%;
 }
-
 
 .testoHome2{
   margin-top: 0px;
@@ -117,6 +108,12 @@ img {
   to {background-color: white;}
 }
 
+#audio.soundFadeIn{
+  animation: animSoundFade;
+  animation-fill-mode: both;
+  animation-duration: 6s;
+}
+
 #homePage.animatingOut {
   animation: homeOut;
   animation-fill-mode: both;
@@ -187,6 +184,11 @@ img {
   animation-iteration-count: 2;
   animation-direction: alternate;
 }*/
+
+@keyframes animSoundFade {
+ 0% {volume: 0.;}
+ 100% {volume: 1.;}
+}
 
 @keyframes homeOut {
   0% {

@@ -8,7 +8,11 @@ function homePageFadeOut() {
 }
 
 function playAudioFile() {
-  document.getElementById('suono').play();
+  document.getElementById('suonoMp3').play();
+  document.getElementById('suonoOgg').play();
+/*
+  var au = document.getElementById('suonoMp3');
+  au.classList.add("soundFadeIn");*/
 }
 
 function backgroundToWhite() {
