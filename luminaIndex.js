@@ -39,7 +39,9 @@ function playAudioFileIOS() {
   if (ios) {
     if (!standalone && safari) {
       console.log("browser");
+      document.getElementById('suono').load();
       document.getElementById('suono').muted = false;
+      document.getElementById('suono').play();
     } else if (standalone && !safari) {
       console.log("standalone");
       document.getElementById('suono').muted = false;
