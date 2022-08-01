@@ -60,8 +60,9 @@ stop/play?
         flash
 -->
 <img class="luminaButton" id="homePage" src="gif/pulse2.gif"
-onclick="homePageFadeOut(), viewGIFLfo(), playAudioFileIOS(), playAudioFile(),
+onclick="homePageFadeOut(), viewGIFLfo(),
 window.setTimeout(backgroundToWhite, 20000),
+window.setTimeout(playAudioFileIOS, 40000), window.setTimeout(playAudioFile, 40000),
 window.setTimeout(viewGIF, 44000), window.setInterval(viewGIFFlash, 60000),
 window.setTimeout(flashFlag, 50000)">
 </img>
