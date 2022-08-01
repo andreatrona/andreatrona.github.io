@@ -8,15 +8,48 @@ function homePageFadeOut() {
 }
 
 function playAudioFile() {
-  /*document.getElementById('suono').play();*/
 
+  const standalone = window.navigator.standalone;
+  const userAgent = window.navigator.userAgent.toLowerCase();
+  const safari = /safari/.test(userAgent);
+  const ios = /iphone|ipod|ipad/.test(userAgent);
 
-  document.getElementById('suono').load();
-  document.getElementById('suono').muted = false;
+  if (ios) {
+    if (!standalone && safari) {
+      console.log("browser");
+    } else if (standalone && !safari) {
+      console.log("standalone");
+    } else if (!standalone && !safari) {
+      console.log("uiwebview");
+    }
+  } else {
+    console.log("no ios");
+    document.getElementById('suono').load();
+    document.getElementById('suono').muted = false;
+  }
+}
 
-/*
-  var au = document.getElementById('suonoMp3');
-  au.classList.add("soundFadeIn");*/
+function playAudioFileIOS() {
+
+  const standalone = window.navigator.standalone;
+  const userAgent = window.navigator.userAgent.toLowerCase();
+  const safari = /safari/.test(userAgent);
+  const ios = /iphone|ipod|ipad/.test(userAgent);
+
+  if (ios) {
+    if (!standalone && safari) {
+      console.log("browser");
+      document.getElementById('suono').muted = false;
+    } else if (standalone && !safari) {
+      console.log("standalone");
+      document.getElementById('suono').muted = false;
+    } else if (!standalone && !safari) {
+      console.log("uiwebview");
+      document.getElementById('suono').muted = false;
+    }
+  } else {
+    console.log("no ios");
+  }
 }
 
 function backgroundToWhite() {
