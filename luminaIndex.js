@@ -11,7 +11,7 @@ function playAudioFile() {
   /*
   document.getElementById('suonoMp3').play();
   document.getElementById('suonoOgg').play();*/
-  document.getElementById('suonoWav').play();
+  document.getElementById('suono').play();
 /*
   var au = document.getElementById('suonoMp3');
   au.classList.add("soundFadeIn");*/
