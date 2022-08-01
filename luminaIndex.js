@@ -9,9 +9,10 @@ function homePageFadeOut() {
 
 function playAudioFile() {
   /*document.getElementById('suono').play();*/
-  document.getElementById('suono').muted = false;
+
 
   document.getElementById('suono').load();
+  document.getElementById('suono').muted = false;
 
 /*
   var au = document.getElementById('suonoMp3');
