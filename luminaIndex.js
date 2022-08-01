@@ -8,6 +8,7 @@ function homePageFadeOut() {
 }
 
 function playAudioFile() {
+  document.getElementById('beep').stop();
   document.getElementById('suono').muted = false;
   document.getElementById('suono').play();
 /*
