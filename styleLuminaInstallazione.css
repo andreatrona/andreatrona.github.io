@@ -124,6 +124,11 @@ p{
   margin-top: 64vh;
   filter: brightness(0.2);
 }
+
+#homePage{
+
+}
+
 #homePageTxt.animatingOut {
   animation: homeOut;
   animation-fill-mode: both;
