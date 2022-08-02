@@ -1,0 +1,305 @@
+html, body {
+  margin:0px;
+}
+
+#sfondo{
+  background-color: #15161b;
+}
+
+p{
+  font-size: 40px;
+  color:white;
+  margin-left: 1vh;
+  margin-right: 1vh;
+}
+
+
+.fullscreen {
+  text-align: center;
+  height: 100vh;
+  width: 100%;
+  opacity:1;
+}
+
+.imgCenter{
+  text-align:center;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+
+.testoHome2{
+  margin-top: 0px;
+  text-align: justify;
+  opacity: 0;
+}
+.nota{
+  font-size: 25px;
+  opacity: 0;
+}
+ .myBody {
+   padding: 0px;
+   padding-bottom: 0px;
+   min-height: 84vh; // da scegliere accuratamente la dimensione (conta la dimensione del finto header)
+ }
+ .luminaButton {
+   border: none;
+   text-align: center;
+   -webkit-transition-duration: 0.4s; /* Safari */
+   transition-duration: 0.4s;
+   animation-fill-mode: forwards;
+
+   position: absolute;
+   margin: auto;
+   top: 0;
+   left: 0;
+   right: 0;
+   bottom: 0;
+ }
+
+ .circle {
+   height: 25px;
+   width: 25px;
+   background-color: white;
+   border-radius: 50%;
+   display: inline-block;
+}
+
+ .luminaButton:checked {
+   /*color: white;*/
+   content: "";
+   opacity: 0;
+   transition: 5s;
+ }
+
+ div {
+   width: 100px;
+   height: 100px;
+   background-color: black;
+   animation-duration: 0.2s;
+ }
+
+ .myLight {
+   background: transparent 50% 50% no-repeat /contain;
+   padding-left: -0px;
+   padding-top: 0px;
+   /*height: 100vh;*/
+   opacity:0;
+ }
+
+ .myLight img{
+  width: 100vw;
+  height: 600vh;
+ }
+
+ .myLight2 {
+   background: transparent 50% 50% no-repeat /contain;
+   padding-left: -0px;
+   padding-top: 0px;
+   opacity:0;
+   width: 100vw;
+   height: 0vh;
+   position: absolute;
+ }
+
+ @keyframes example {
+  from {background-color: black;}
+  to {background-color: white;}
+}
+
+#audio.soundFadeIn{
+  animation: animSoundFade;
+  animation-fill-mode: both;
+  animation-duration: 6s;
+}
+
+#homePage.animatingOut {
+  animation: homeOut;
+  animation-fill-mode: both;
+  animation-duration: 2s;
+}
+
+#homePageTxt{
+  margin-top: 64vh;
+  filter: brightness(0.6);
+}
+
+#homePage{
+
+}
+
+#homePageTxt.animatingOut {
+  animation: homeOut;
+  animation-fill-mode: both;
+  animation-duration: 1.5s;
+}
+
+#homePage2Testo.animatingIn {
+  animation: home2In;
+  animation-fill-mode: both;
+  animation-duration: 20s;
+  animation-iteration-count: 2;
+  animation-direction: alternate;
+}
+
+#homePage2Nota.animatingIn {
+  animation: home2In;
+  animation-fill-mode: both;
+  animation-duration: 20s;
+  animation-iteration-count: 2;
+  animation-direction: alternate;
+}
+
+#sfondo.animWhite{
+  animation: toWhite;
+  animation-fill-mode: both;
+  animation-duration: 20s;
+  animation-iteration-count: 1;
+  animation-direction: alternate;
+}
+
+#sfondo.animFlashBlack{
+  animation: flashToBlack;
+  animation-fill-mode: both;
+  animation-duration: 0.05s;
+  animation-iteration-count: 5;
+}
+
+#sfondo.black{
+  background-color: black;
+}
+
+#gifPlay.gifViewer{
+  animation: gifIn;
+  animation-fill-mode: both;
+  animation-duration:8s;
+  animation-iteration-count: 1;
+}
+
+#gifImg.gifLfo{
+  animation: gifInOut;
+  animation-fill-mode: both;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+
+.mylight img{
+  animation: BN;
+  animation-fill-mode: both;
+  animation-duration: 0.1s;
+  animation-iteration-count: 8;
+}
+/*
+#homePage2Testo.animatingIn {
+  animation: home2In;
+  animation-fill-mode: both;
+  animation-duration: 20s;
+  animation-iteration-count: 2;
+  animation-direction: alternate;
+}*/
+
+@keyframes animSoundFade {
+ 0% {volume: 0.;}
+ 100% {volume: 1.;}
+}
+
+@keyframes homeOut {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes home2In {
+  0% {
+    opacity: 0;
+  }
+  12%{
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes toWhite {
+  0% {
+    background-color: #15161b;
+  }
+  100% {
+    background-color: #ffffff;
+  }
+}
+
+@keyframes flashToBlack {
+  0% {
+    background-color: white;
+  }
+  100% {
+    background-color: black;
+  }
+}
+
+@keyframes gifIn {
+  0% {
+    opacity: 0;
+  }
+  50%{
+    opacity: 0.2;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes gifInOut {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+
+
+@keyframes gifInOut {
+  0% {
+    filter: hue-rotate(90deg);
+  }
+  100% {
+    filter: hue-rotate(0deg);
+  }
+}
+
+@keyframes BN {
+  0% {
+    filter: contrast(20%);
+  }
+  100% {
+    filter: contrast(100%);
+  }
+}
+
+@media only screen and (max-width: 1500px) {
+  .half{
+    width:90%;
+    padding:0px;
+  }
+}
+
+@media only screen and (max-width: 700px) {
+  .half{
+    width:100%;
+    padding:0px;
+  }
+  .workPic{
+    width:300px!important;
+    height:300px!important;
+
+  }
+}

@@ -1,0 +1,78 @@
+<!-- TO DO
+fade in volume
+stop/play?
+-->
+
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="author" content="agnesebanti andreatrona">
+  <meta name="description" content="web audiovisual installation">
+  <meta property="og:site_name" content="LUMINA">
+  <meta property="og:description" content="/LUMINA (2022)">
+  <title>Agnese Banti, Andrea Trona - LUMINA</title>
+  <link rel="stylesheet" href="styleLuminaInstallazione test.css">
+</head>
+
+
+  <body style="font-family:arial;" id="sfondo">
+<!--
+<audio controls loop id="suono">
+  <source src="audio/LUMINAdigital.mp3" type="audio/mpeg">
+  <source src="audio/LUMINAdigital.ogg" type="audio/ogg">
+  <source src="audio/LUMINAdigital.wav" type="audio/wav">
+  <p>Your browser does not support HTML5 audio, but you can still</p>
+</audio>-->
+
+
+<script src="luminaIndex test.js"></script>
+
+
+
+<!-- light GIF -->
+<div class="myLight" id="gifPlay">
+ <img src="gif/light1.gif" id="gifImg">
+
+ </div>
+</div>
+
+
+
+<p class="testoHome2" id="homePage2Testo">
+  Agnese Banti, Andrea Trona <br>
+  <b>LUMINA</b> (2022)<br>
+  Opera digitale sonora e visiva<br><br>
+
+  Il canto “della lumina” o “del lume al grano”¹ è una nenia corale di origini pagane proveniente dall’antico mondo contadino toscano che augura alle piante di grano una crescita sana e forte. Con elementi sonori e visivi, LUMINA vuole rievocare in maniera intima e contemporanea questa antica pratica rituale che aveva lo scopo di scacciare la sciagura del “carbonchio”, più conosciuto come “carbone del frumento”. Durante la notte di Carnevale, nelle campagne intorno a Firenze, aveva luogo questo rituale propiziatorio durante il quale i contadini cantavano in coro con delle torce illuminando e vegliando i campi di grano.<br><br>
+
+  Ideazione, progetto audiovisivo e voce: Agnese Banti<br>
+  Progetto audiovisivo e sviluppo web: Andrea Trona<br>
+  _______<br>
+  <p class="nota" id="homePage2Nota">
+  ¹ Il brano compare nel libro di Ivo Guasti/Franco Manescalchi “Lumina: memorie, massime e canti popolari dal mondo contadino toscano” (Firenze 1984) e fa parte del repertorio dei Maggiaioli di Barberino di Mugello, presente nel disco “Dopo Barischi…” (2004) con il titolo “Grano grano”.
+  </p>
+</p>
+
+
+
+
+<img class="luminaButton" id="homePage" src="gif/pulse2.gif"
+onclick="homePageFadeOut(), viewGIFLfo(), playAudioFileIOS(), playAudioFile(),
+window.setTimeout(backgroundToWhite, 20000),
+window.setTimeout(viewGIF, 44000), window.setInterval(viewGIFFlash, 60000),
+window.setTimeout(flashFlag, 50000)">
+</img>
+
+<p class="luminaButton" id="homePageTxt"> tocca qui </p>
+
+<audio loop id="suono" autoPlay muted>
+  <source src="audio/LUMINAdigital02.mp3" type="audio/mpeg">
+  <source src="audio/LUMINAdigital02.ogg" type="audio/ogg">
+  <!--<source src="audio/LUMINAdigital.wav" type="audio/wav">-->
+  <p>Your browser does not support HTML5 audio, but you can still</p>
+</audio>
+
+
+  </body>
+</html>
