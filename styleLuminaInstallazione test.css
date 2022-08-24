@@ -138,7 +138,7 @@ p{
 #homePage2Testo.animatingIn {
   animation: home2In;
   animation-fill-mode: both;
-  animation-duration: 20s;
+  animation-duration: 40s;
   animation-iteration-count: 2;
   animation-direction: alternate;
 }
@@ -146,7 +146,7 @@ p{
 #homePage2Nota.animatingIn {
   animation: home2In;
   animation-fill-mode: both;
-  animation-duration: 20s;
+  animation-duration: 40s;
   animation-iteration-count: 2;
   animation-direction: alternate;
 }
@@ -154,7 +154,7 @@ p{
 #sfondo.animWhite{
   animation: toWhite;
   animation-fill-mode: both;
-  animation-duration: 20s;
+  animation-duration: 40s;
   animation-iteration-count: 1;
   animation-direction: alternate;
 }
