@@ -122,7 +122,7 @@ p{
 
 #homePageTxt{
   margin-top: 64vh;
-  filter: brightness(0.2);
+  filter: brightness(0.6);
 }
 
 #homePage{
@@ -132,13 +132,13 @@ p{
 #homePageTxt.animatingOut {
   animation: homeOut;
   animation-fill-mode: both;
-  animation-duration: 1s;
+  animation-duration: 1.5s;
 }
 
 #homePage2Testo.animatingIn {
   animation: home2In;
   animation-fill-mode: both;
-  animation-duration: 20s;
+  animation-duration: 40s;
   animation-iteration-count: 2;
   animation-direction: alternate;
 }
@@ -146,7 +146,7 @@ p{
 #homePage2Nota.animatingIn {
   animation: home2In;
   animation-fill-mode: both;
-  animation-duration: 20s;
+  animation-duration: 40s;
   animation-iteration-count: 2;
   animation-direction: alternate;
 }
@@ -154,7 +154,7 @@ p{
 #sfondo.animWhite{
   animation: toWhite;
   animation-fill-mode: both;
-  animation-duration: 20s;
+  animation-duration: 40s;
   animation-iteration-count: 1;
   animation-direction: alternate;
 }
