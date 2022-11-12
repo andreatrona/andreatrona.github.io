@@ -1,5 +1,34 @@
 <!DOCTYPE html>
 <html>
+<script>
+function includeHTML() {
+  var z, i, elmnt, file, xhttp;
+  /*loop through a collection of all HTML elements:*/
+  z = document.getElementsByTagName("*");
+  for (i = 0; i < z.length; i++) {
+    elmnt = z[i];
+    /*search for elements with a certain atrribute:*/
+    file = elmnt.getAttribute("w3-include-html");
+    if (file) {
+      /*make an HTTP request using the attribute value as the file name:*/
+      xhttp = new XMLHttpRequest();
+      xhttp.onreadystatechange = function() {
+        if (this.readyState == 4) {
+          if (this.status == 200) {elmnt.innerHTML = this.responseText;}
+          if (this.status == 404) {elmnt.innerHTML = "Page not found.";}
+          /*remove the attribute, and call this function once more:*/
+          elmnt.removeAttribute("w3-include-html");
+          includeHTML();
+        }
+      }
+      xhttp.open("GET", file, true);
+      xhttp.send();
+      /*exit the function:*/
+      return;
+    }
+  }
+}
+</script>
   <head>
     <meta charset="utf-8">
     <meta name="author" content="andreatrona">
@@ -8,99 +37,99 @@
     <meta property="og:description" content="/andreatrona agenda">
     <title>andreatrona/agenda</title>
     <link rel="stylesheet" href="style.css">
-    <!--<style>
-      a:link {
-        color: grey;
-        background-color: transparent;
-        text-decoration: none;
-      }
-      a:visited {
-        color: grey;
-        background-color: transparent;
-        text-decoration: underline;
-      }
-      a:hover {
-        color: blue;
-        background-color: transparent;
-        text-decoration: underline;
-      }
-      a:active {
-        color: grey;
-        background-color: transparent;
-        text-decoration: underline;
-      }
-      .half{
-        width:60%;
-        padding:0px;
-      }
-      .vl {
-        border-left: 1px solid black;
-        margin-top: 0px;
-        margin-left: 600px;
-        height: 20px;
-      }
-      .tvl {
-        border-left: 1px;
-        margin-top: 0px;
-        margin-left: 0px;
-        height: 100px;
-      }
-      .footer {
-         position: text-bottom;
-         left: 10px;
-         bottom: 0;
-         width: 100%;
-         color: grey;
-
-       }
-       .myBody {
-         padding: 0px;
-         padding-bottom: 0px;
-         min-height: 84vh; // da scegliere accuratamente la dimensione (conta la dimensione del finto header)
-       }
-
-    </style>-->
   </head>
   <body style="font-family:arial;">
     <div class="myBody">
-    <font size="+5">
-    <h1 style = "margin-bottom: 3px; margin-top: 0px"> <a href= "/">/andreatrona</a>/agenda </h1>
-    </font>
-    <font size="+1">
-      <p style="color: grey;margin-bottom: 3px; margin-top:3px"> musician, sound engineer and audio programmer based in Bologna (IT). </p>
-      <p style="color: grey;margin-bottom: 3px; margin-top:3px"> Working between music producing, live sound engineering and technologies. </p>
-    <hr style="width:100%; text-align:left; margin-left:0; margin-top:3px; margin-bottom:10px"></hr>
-    </font>
-    <font size="+2">
-    <div class="cont">
-      <div id="ambiti-desc">
-      </div>
-      <table id="ambiti" title="ambiti lavorativi">
-        <tbody>
-            <tr>
-              <td> <a style = "margin-right: 40px"; href="/about">about</a> </td>
-              <td> <a style = "margin-right: 40px"; href="/works">works</a></td>
-              <td> <a style = "margin-right: 40px"; href="/agenda">agenda</a> </td>
-              <td> <a style = "margin-right: 40px"; href="/research">research</a> </td>
-            </tr>
+      <div w3-include-html="testIntestazione.html"></div>
+      <script>
+      includeHTML();
+      </script>
 
-          </tbody>
-        </table>
-      </div>
-      </font>
-
-
-
-    <hr style="width:100%; text-align:left; margin-left:0; margin-top:10px; margin-bottom:10px"></hr>
     <table id="agenda" title="andreatrona/agenda" style="font-size:150%">
       <tbody>
+
+        <tr>
+          <td style="vertical-align: text-top">
+            <p style="margin-right:10px "> <strong>31 OCT 2022</strong></p>
+          </td>
+          <td style="vertical-align: text-top">
+            <p style="margin-right:30px "><strong> <a href= "">BOXE | Prima Onda Fest 22</a> </strong>
+
+              <font size="+1"> <br> Sound direction, light project, programming </font>
+            </p>
+          </td>
+          <!-- LUOGO -->
+          <td style="vertical-align: text-top">
+            <p> <i>Ecomuseo Mare Memoria Viva, Palermo</i></p>
+          </td>
+        </tr>
+        <tr>
+          <td class="spacer" colspan="3"></td>
+        </tr>
+
+        <tr>
+          <td style="vertical-align: text-top">
+            <p style="margin-right:10px "> <strong>1 - 2 OCT 2022</strong></p>
+          </td>
+          <td style="vertical-align: text-top">
+            <p style="margin-right:30px "><strong> <a href= "">XENAKIS | La Légende d'Eer </a> </strong>
+
+              <font size="+1"> <br> light project, programming </font>
+            </p>
+          </td>
+          <!-- LUOGO -->
+          <td style="vertical-align: text-top">
+            <p> <i>Ex Chiesa San Mattia, Bologna</i></p>
+          </td>
+        </tr>
+        <tr>
+          <td class="spacer" colspan="3"></td>
+        </tr>
+
+        <tr>
+          <td style="vertical-align: text-top">
+            <p style="margin-right:10px "> <strong>19 - 20 SEP 2022</strong></p>
+          </td>
+          <td style="vertical-align: text-top">
+            <p style="margin-right:30px "><strong> <a href= "">I versi delle mani | Gender Bender 22 </a> </strong>
+
+              <font size="+1"> <br> Sound direction for I versi delle mani (2021) - Marta Bellu </font>
+            </p>
+          </td>
+          <!-- LUOGO -->
+          <td style="vertical-align: text-top">
+            <p> <i>Teatro San Leonardo, Bologna</i></p>
+          </td>
+        </tr>
+        <tr>
+          <td class="spacer" colspan="3"></td>
+        </tr>
+
+    <tr>
+      <td style="vertical-align: text-top">
+        <p style="margin-right:10px "> <strong>15 SEP 2022</strong></p>
+      </td>
+      <td style="vertical-align: text-top">
+        <p style="margin-right:30px "><strong> <a href= "">I versi delle mani | Shorttheatre 22</a> </strong>
+
+          <font size="+1"> <br> Sound direction for I versi delle mani (2021) - Marta Bellu </font>
+        </p>
+      </td>
+      <!-- LUOGO -->
+      <td style="vertical-align: text-top">
+        <p> <i>Teatro di Roma - Sala Oceano, Roma</i></p>
+      </td>
+    </tr>
+    <tr>
+      <td class="spacer" colspan="3"></td>
+    </tr>
 
     <tr>
       <td style="vertical-align: text-top">
         <p style="margin-right:10px "> <strong>13 SEP 2022</strong></p>
       </td>
       <td style="vertical-align: text-top">
-        <p style="margin-right:30px "><strong> <a href= ""title="FABRONI SOUND GARDEN">FABRONI SOUND GARDEN:IN A LARGE OPEN SPACE | Azione collettivaa di musica e danza </a> </strong>
+        <p style="margin-right:30px "><strong> <a href= "">FABRONI SOUND GARDEN:IN A LARGE OPEN SPACE | Azione collettivaa di musica e danza </a> </strong>
 
           <font size="+1"> <br> Tempo Reale Electroacoustic Ensemble & Cristina Kristal Rizzo </font>
         </p>
@@ -108,17 +137,6 @@
       <!-- LUOGO -->
       <td style="vertical-align: text-top">
         <p> <i>Palazzo Fabroni, Pistoia</i></p>
-      </td>
-      <!--<td style="vertical-align: text-top">
-        <p> <i></i></p>
-      </td>-->
-      <!-- LINKS -->
-      <td style="vertical-align: text-top">
-        <!--<ul>
-          <li>-->
-            <!--<a href="https://byenow.bandcamp.com/album/snow-song-babies-2" target="_blank" title="Snow Song / Babies on Bandcamp">listen</a>-->
-        <!--  </li>
-        </ul>-->
       </td>
     </tr>
     <tr>
