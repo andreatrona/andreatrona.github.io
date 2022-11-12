@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html>
+<script>
+function includeHTML() {
+  var z, i, elmnt, file, xhttp;
+  /*loop through a collection of all HTML elements:*/
+  z = document.getElementsByTagName("*");
+  for (i = 0; i < z.length; i++) {
+    elmnt = z[i];
+    /*search for elements with a certain atrribute:*/
+    file = elmnt.getAttribute("w3-include-html");
+    if (file) {
+      /*make an HTTP request using the attribute value as the file name:*/
+      xhttp = new XMLHttpRequest();
+      xhttp.onreadystatechange = function() {
+        if (this.readyState == 4) {
+          if (this.status == 200) {elmnt.innerHTML = this.responseText;}
+          if (this.status == 404) {elmnt.innerHTML = "Page not found.";}
+          /*remove the attribute, and call this function once more:*/
+          elmnt.removeAttribute("w3-include-html");
+          includeHTML();
+        }
+      }
+      xhttp.open("GET", file, true);
+      xhttp.send();
+      /*exit the function:*/
+      return;
+    }
+  }
+};
+</script>
+  <head>
+    <meta charset="utf-8">
+    <meta name="author" content="andreatrona">
+    <meta name="description" content="/andreatrona LUMINA">
+    <meta property="og:site_name" content="/andreatrona">
+    <meta property="og:description" content="/andreatrona LUMINA">
+    <title>andreatrona/LUMINA</title>
+    <link rel="stylesheet" href="style.css">
+    <!--<style>
+      a:link {
+        color: grey;
+        background-color: transparent;
+        text-decoration: none;
+      }
+      a:visited {
+        color: grey;
+        background-color: transparent;
+        text-decoration: underline;
+      }
+      a:hover {
+        color: blue;
+        background-color: transparent;
+        text-decoration: underline;
+      }
+      a:active {
+        color: grey;
+        background-color: transparent;
+        text-decoration: underline;
+      }
+      .half{
+        width:60%;
+        padding:0px;
+      }
+      .vl {
+        border-left: 1px solid black;
+        margin-top: 0px;
+        margin-left: 600px;
+        height: 20px;
+      }
+      .tvl {
+        border-left: 1px;
+        margin-top: 0px;
+        margin-left: 0px;
+        height: 100px;
+      }
+      .footer {
+         position: text-bottom;
+         left: 10px;
+         bottom: 0;
+         width: 100%;
+         color: grey;
+
+       }
+       .myBody {
+         padding: 0px;
+         padding-bottom: 0px;
+         min-height: 84vh; // da scegliere accuratamente la dimensione (conta la dimensione del finto header)
+       }
+
+    </style>-->
+  </head>
+  <body style="font-family:arial;">
+    <div class="myBody">
+    <font size="+5">
+    <h1 style = "margin-bottom: 3px; margin-top: 0px"> <a href= "/works">/works</a>/è stato bello</h1>
+    </font>
+    <font size="+1">
+      <p style="color: grey;margin-bottom: 3px; margin-top:3px"> musician, sound engineer and audio programmer based in Bologna (IT). </p>
+      <p style="color: grey;margin-bottom: 3px; margin-top:3px"> Working between music producing, live sound engineering and technologies. </p>
+    <hr style="width:100%; text-align:left; margin-left:0; margin-top:3px; margin-bottom:10px"></hr>
+    </font>
+    <font size="+2">
+    <div class="cont">
+      <div id="ambiti-desc">
+      </div>
+      <table id="ambiti" title="ambiti lavorativi">
+        <tbody>
+            <tr>
+              <td> <a style = "margin-right: 40px"; href="/about">about</a> </td>
+              <td> <a style = "margin-right: 40px"; href="/works">works</a></td>
+              <td> <a style = "margin-right: 40px"; href="/agenda">agenda</a> </td>
+              <td> <a style = "margin-right: 40px"; href="/research">research</a> </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      </font>
+    <hr style="width:100%; text-align:left; margin-left:0; margin-top:10px; margin-bottom:10px"></hr>
+
+    <table id="works" title="andreatrona/works" style="font-size:150%">
+      <tbody>
+
+        <tr style="vertical-align: top">
+          <td>
+            <img class="workPic" src="work_pic/è stato bello.jpeg" alt="" style="width:500px;height:500px;">
+          </td>
+          <td>
+
+            <div class="half">
+            <p style="margin-right:30px; margin-left: 10px; margin-top: 0px">
+              <strong> foley, sound design</strong>
+              <font size="+1">
+              <br>
+              <br>
+              n.7 #aftersex episode by Federico Pipia and Ivan Di Vita.
+              <br>
+              <br>
+              Foley, sound design: Andrea Trona, Francesco Vogli
+
+              <br>
+              <br>
+              <a href="https://www.youtube.com/watch?v=sWlnQ2e3w0I" target="_blank" title="è stato bello on YouTube"> Watch <i>è stato bello</i>  on YouTube </a>
+              </font>
+            </p>
+          </div>
+          <!-- LINKS -->
+        </tr>
+        <tr>
+          <td class="spacer" colspan="3"></td>
+        </tr>
+
+      </tbody>
+    </table>
+
+  </div>
+
+<div w3-include-html="test myFooter.html"></div>
+<script>
+includeHTML();
+</script>
+        </font>
+      </font>
+
+
+    <!--img src="https://f4.bcbits.com/img/0008152700_100.png"-->
+  </body>
+</html>
