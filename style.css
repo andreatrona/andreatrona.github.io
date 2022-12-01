@@ -47,6 +47,12 @@ a:active {
    padding-bottom: 0px;
    min-height: 84vh; // da scegliere accuratamente la dimensione (conta la dimensione del finto header)
  }
+ .workTitleNotPassed{
+   color: blue;
+ }
+ .workTitlePassed{
+   color: grey;
+ }
 
 
 hr {
