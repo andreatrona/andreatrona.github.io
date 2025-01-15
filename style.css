@@ -22,6 +22,11 @@ a:active {
   width:100%;
   padding:0px;
 }
+.halftextindex{
+  width:100%;
+  padding:0px;
+  text-align:center;
+}
 .vl {
   border-left: 1px solid black;
   margin-top: 0px;
@@ -51,7 +56,11 @@ a:active {
    color: blue;
  }
  .workTitlePassed{
-   color: grey;
+   color: lightgrey;
+ }
+
+.workyear{
+   color: lightgrey;
  }
 
 
